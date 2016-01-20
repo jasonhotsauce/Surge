@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E65C5BE419FF9CF600149FF1 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65C5BE319FF9CF600149FF1 /* Matrix.swift */; };
+		F5CBFF6B1C5006560036B950 /* SVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CBFF6A1C5006560036B950 /* SVM.swift */; };
 		F8A1E1CB19917B0A009735E2 /* Arithmetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A1E1C419917B0A009735E2 /* Arithmetic.swift */; };
 		F8A1E1CC19917B0A009735E2 /* Auxiliary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A1E1C519917B0A009735E2 /* Auxiliary.swift */; };
 		F8A1E1CD19917B0A009735E2 /* Exponential.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A1E1C619917B0A009735E2 /* Exponential.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		E65C5BE319FF9CF600149FF1 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		F5CBFF6A1C5006560036B950 /* SVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVM.swift; sourceTree = "<group>"; };
 		F84A6AAE19A9A72F007B53E1 /* SurgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F84A6AB119A9A72F007B53E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8A1E1AA19917A79009735E2 /* Surge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Surge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +155,7 @@
 				E65C5BE319FF9CF600149FF1 /* Matrix.swift */,
 				F8A1E1C819917B0A009735E2 /* Power.swift */,
 				F8A1E1CA19917B0A009735E2 /* Trigonometric.swift */,
+				F5CBFF6A1C5006560036B950 /* SVM.swift */,
 			);
 			path = Source;
 			sourceTree = SOURCE_ROOT;
@@ -295,6 +298,7 @@
 				F8A1E1CF19917B0A009735E2 /* Power.swift in Sources */,
 				E65C5BE419FF9CF600149FF1 /* Matrix.swift in Sources */,
 				F8AE90FE19D1D9120078C7B2 /* FFT.swift in Sources */,
+				F5CBFF6B1C5006560036B950 /* SVM.swift in Sources */,
 				F8A1E1CD19917B0A009735E2 /* Exponential.swift in Sources */,
 				F8A1E1CB19917B0A009735E2 /* Arithmetic.swift in Sources */,
 			);
