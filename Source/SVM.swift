@@ -45,28 +45,47 @@ public struct Kernel {
     }
 }
 
-public struct svm {
-    var trainingSamples: Matrix<Double>
-    var trainingOutputs: [Double]
-    var C: Float = 0.0
-    var threshold: Float = 0.0001
+public struct SVM<T where T: FloatingPointType, T: FloatLiteralConvertible> {
+    
+    var trainingSamples: Matrix<T>
+    var trainingOutputs: [T]
+    var C: T = 0.0
+    var threshold: T = 0.0001
     var kernal: Kernel = Kernel()
-    var eCache: [Double]
-    var alphas: [Double]
+    var eCache: [T]
+    var alphas: [T]
     var numOfClasses: Int
     
-    public init(trainingSamples: Matrix<Double>, trainingOutputs: [Double], C: Float, threshold: Float, numOfClasses: Int) {
+    public init(trainingSamples: Matrix<T>, trainingOutputs: [T], C: T, threshold: T, numOfClasses: Int) {
         precondition(trainingSamples.rows != trainingOutputs.count, "training data set and output label must have the same amound.")
         self.trainingSamples = trainingSamples
         self.trainingOutputs = trainingOutputs
         self.C = C
         self.threshold = threshold
         self.numOfClasses = numOfClasses
-        eCache = [Double](count: trainingSamples.rows, repeatedValue: 0.0)
-        alphas = [Double](count: trainingSamples.rows, repeatedValue: 0.0)
+        eCache = [T](count: trainingSamples.rows, repeatedValue: 0.0)
+        alphas = [T](count: trainingSamples.rows, repeatedValue: 0.0)
     }
     
-    public func train() {
+    private func clipValue(value: T, max: T, min: T) -> T {
+        if value > max {
+            return max;
+        } else if value < min {
+            return min;
+        } else {
+            return value;
+        }
+    }
+    
+    private func calculateAndUpdateError(err1: T, err2: T) {
         
+    }
+    
+    public func train(maxIteration: Int) {
+        var currentIteration = 0;
+        while (currentIteration < maxIteration) {
+            
+            currentIteration++;
+        }
     }
 }
